@@ -1,25 +1,33 @@
-import { useSignal } from "@preact/signals";
-import Counter from "../islands/Counter.tsx";
+import FirstIsland from "../islands/FirstIsland.tsx";
 
 export default function Home() {
-  const count = useSignal(3);
   return (
-    <div class="px-4 py-8 mx-auto bg-[#86efac]">
-      <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-        <img
-          class="my-6"
-          src="/logo.svg"
-          width="128"
-          height="128"
-          alt="the Fresh logo: a sliced lemon dripping with juice"
-        />
-        <h1 class="text-4xl font-bold">Welcome to Fresh</h1>
-        <p class="my-4">
-          Try updating this message in the
-          <code class="mx-2">./routes/index.tsx</code> file, and refresh.
-        </p>
-        <Counter count={count} />
-      </div>
-    </div>
+    <>
+  <head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {/* Meta tags specific to each page can be added here */}
+    <title>BMCC.space</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/register">Register</a></li>
+          <li><a href="./about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Welcome to BMCC.space!</h2>
+      {/* Page-specific content goes here */}
+    </main>
+    <footer>
+      {/* Footer content, such as contact information and links */}
+    </footer>
+  </body>
+</>
+
   );
 }
