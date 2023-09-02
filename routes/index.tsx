@@ -1,5 +1,4 @@
-import FirstIsland from "../islands/FirstIsland.tsx";
-
+import Login from "../islands/Login.tsx"
 export default function Home() {
   return (
     <>
@@ -10,22 +9,11 @@ export default function Home() {
     <title>BMCC.space</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/register">Register</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
-      </nav>
-    </header>
     <main>
-      <h2>Welcome to BMCC.space!</h2>
-      {/* Page-specific content goes here */}
+      <h1>BMCC.space</h1>
+      <p>an online student directory for BMCC</p>
+      <Login/>
     </main>
-    <footer>
-      {/* Footer content, such as contact information and links */}
-    </footer>
   </body>
 </>
 
