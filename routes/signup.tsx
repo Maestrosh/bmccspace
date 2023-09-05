@@ -5,12 +5,11 @@ export default function SignUpPage() {
     <div
       className={tw`bg-gray-200 h-screen flex flex-col items-center justify-center`}
     >
-      <div className={tw`text-center`}>
+      <header className={tw`text-center`}>
         <h1 href={"/"} className={tw`text-6xl font-bold text-blue-500`}>
-          BMCC.space
+          online student directory for BMCC
         </h1>
-        <p className={tw`text-xl text-gray-500`}>An online student directory</p>
-      </div>
+      </header>
 
       <div className={tw`bg-white mt-8 p-6 rounded-lg max-w-md w-full`}>
         <form>
