@@ -6,7 +6,9 @@ export default function SignUpPage() {
       className={tw`bg-gray-200 h-screen flex flex-col items-center justify-center`}
     >
       <div className={tw`text-center`}>
-        <h1 href={"/"} className={tw`text-6xl font-bold text-blue-500`}>BMCC.space</h1>
+        <h1 href={"/"} className={tw`text-6xl font-bold text-blue-500`}>
+          BMCC.space
+        </h1>
         <p className={tw`text-xl text-gray-500`}>An online student directory</p>
       </div>
 
@@ -23,19 +25,7 @@ export default function SignUpPage() {
           />
           <input
             className={tw`w-full border p-2 rounded mb-4`}
-            placeholder="Major"
-          />
-
-          <input
-            className={tw`w-full border p-2 rounded mb-4`}
-            type="date"
-            min="1900-01-01"
-            max="2099-12-31"
-          />
-
-          <input
-            className={tw`w-full border p-2 rounded mb-4`}
-            placeholder="Student Email"
+            placeholder="Email"
           />
 
           <button
