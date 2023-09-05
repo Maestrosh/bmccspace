@@ -5,7 +5,7 @@ export default function SignUpPage() {
     <div className={tw`flex flex-col h-screen`}>
       <header className={tw`bg-blue-500 p-4 flex justify-between`}>
         <a href="/" className={tw`text-white font-bold text-2xl`}>
-          Student Directory
+          Apollo
         </a>
       </header>
       <div className={tw`flex flex-col justify-center items-center h-screen`}>
