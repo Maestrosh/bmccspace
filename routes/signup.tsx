@@ -1,13 +1,9 @@
 import { tw } from "twind";
-
+import Header from "../components/Header.tsx";
 export default function SignUpPage() {
   return (
     <div className={tw`flex flex-col h-screen`}>
-      <header className={tw`bg-blue-500 p-4 flex justify-between`}>
-        <a href="/" className={tw`text-white font-bold text-2xl`}>
-          Apollo
-        </a>
-      </header>
+      <Header/>
       <div className={tw`flex flex-col justify-center items-center h-screen`}>
       <div className={tw`max-w-md w-full bg-white shadow-md rounded-lg p-6`}>
         <h1 className={tw`text-3xl font-medium text-gray-700 mb-6`}>Sign up</h1>

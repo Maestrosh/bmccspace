@@ -1,13 +1,10 @@
 import { tw } from "twind";
-
+import Header from "../components/Header.tsx";
+import Footer from "../components/Footer.tsx";
 export default function LoginPage() {
   return (
     <div className={tw`flex flex-col h-screen`}>
-      <header className={tw`bg-blue-500 p-4 flex justify-between`}>
-        <a href="/" className={tw`text-white font-bold text-2xl`}>
-          Apollo
-        </a>
-      </header>
+      <Header/>
 
       <div className={tw`flex flex-col justify-center items-center h-screen`}>
         <div className={tw`max-w-md w-full bg-white shadow-md rounded-lg p-6`}>
@@ -49,18 +46,7 @@ export default function LoginPage() {
         </div>
       </div>
 
-      <footer className={tw`bg-gray-200 p-4 flex justify-between`}>
-        <span>&copy; 2023 Apollo</span>
-
-        <nav>
-          <a href="/about" className={tw`text-gray-800 mx-4`}>
-            About
-          </a>
-          <a href="/contact" className={tw`text-gray-800`}>
-            Contact
-          </a>
-        </nav>
-      </footer>
+     <Footer/>
     </div>
   );
 }
