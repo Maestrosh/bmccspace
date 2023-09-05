@@ -50,7 +50,7 @@ export default function SignUpPage() {
       </div>
       </div>
       <footer className={tw`bg-gray-200 p-4 flex justify-between`}>
-        <span>&copy; 2023 Student Directory</span>
+        <span>&copy; 2023 Apollo</span>
 
         <nav>
           <a href="/about" className={tw`text-gray-800 mx-4`}>
